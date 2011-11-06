@@ -40,7 +40,6 @@ module.exports = function(doc, keys, callback) {
 	};
 
 	keys.forEach(function(key) {
-		console.log(key)
 		onupdate(doc, key, onset);
 	});
 

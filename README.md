@@ -18,8 +18,10 @@ var unwatch = watch(doc, function(changes) {
 
 doc.hello = 'other world';
 doc.count++;
+doc.count++;
 
-// the above modifications results in the 
-// watch callback being called on nextTick with
-// changes = {hello:'other world', count:1}
-``` js
+// on nextTick the following gets printed:
+
+{hello:'other world', count:2}
+
+```

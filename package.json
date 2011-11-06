@@ -1,6 +1,6 @@
 {
  "name":"document-watch",
- "version":"0.1.0",
+ "version":"0.1.1",
  "description":"watch for atomic changes in a document",
  "keywords": ["json", "watch", "changes", "document"],
  "author": "Mathias Buus Madsen <mathiasbuus@gmail.com>"

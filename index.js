@@ -21,7 +21,7 @@ var onupdate = function(doc, key, onset) {
 module.exports = function(doc, keys, callback) {
 	if (!callback) {
 		callback = keys;
-		keys = Object.keys(keys);
+		keys = Object.keys(doc);
 	}
 
 	var changed = null;
@@ -40,6 +40,7 @@ module.exports = function(doc, keys, callback) {
 	};
 
 	keys.forEach(function(key) {
+		console.log(key)
 		onupdate(doc, key, onset);
 	});
 
